@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Collection</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Title grid container */
+        .poetry-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .poetry-item {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .poetry-item:hover {
+            background-color: #444;
+        }
+
+        /* Poetry title styling */
+        .poetry-title {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        /* Hidden poetry section */
+        .poetry-content {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            width: 80%;
+            margin: 20px auto;
+            animation: fadeIn 0.5s ease-in-out;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        /* Close button styling */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .close-btn:hover {
+            background-color: #444;
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Poetry Collection</h1>
+    
+    <div class="poetry-container">
+        <div class="poetry-item" onclick="showPoetry('poetry1')">
+            <p class="poetry-title">The Last Breath</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry2')">
+            <p class="poetry-title">Her</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry3')">
+            <p class="poetry-title">Fading Away</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry4')">
+            <p class="poetry-title">Love</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry5')">
+            <p class="poetry-title">Terror of Silence</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry6')">
+            <p class="poetry-title">My Girl in Green</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry7')">
+            <p class="poetry-title">Echoes of a Broken Soul</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry8')">
+            <p class="poetry-title">My Girl in Glasses</p>
+        </div>
+        <div class="poetry-item" onclick="showPoetry('poetry9')">
+            <p class="poetry-title">No Name</p>
+        </div>
+    </div>
+
+    <!-- Poetry content sections -->
+    <div id="poetry1" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry1')">×</button>
+        <h2>The Last Breath</h2>
+        <p>Love killed poets,<br>May love also kill me.<br><br>With every word, I bleed inside,<br>A shattered soul, no place to hide.<br><br>My heart was open, pure, and true,<br>But love tore it, piece by piece, through.<br>They said it would heal,<br>But all it did was steal.<br><br>I write these lines with trembling hands,<br>For I know this is where it ends,<br>Love took my breath, my mind, my soul,<br>Leaving me empty, no longer whole.<br><br>Love killed poets,<br>And it will kill me too,<br>For when love dies,<br>There’s nothing left to do.<br><br>~summry</p>
+    </div>
+    
+    <div id="poetry2" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry2')">×</button>
+        <h2>Her</h2>
+        <p>And then… she came, so gentle, so kind,<br>A girl who healed the cracks in my mind.<br>She was a little shorter, with specs on her face,<br>Big, beautiful eyes filled with grace.<br>Her pink lips spoke words like a song,<br>And her cold, delicate hands held me strong.<br>Her short hair danced with every move,<br>She was the one thing I didn’t want to lose.<br><br>For the first time, I felt alive,<br>In her presence, I learned to survive.<br>She never loved me, yet I loved her still,<br>She became my light, my broken heart’s will.<br><br>~summry</p>
+    </div>
+
+    <div id="poetry3" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry3')">×</button>
+        <h2>Fading Away</h2>
+        <p>I used school as a distraction,<br>But it didn’t ease the attraction,<br>Of my mind that’s stuck in place,<br>A heart lost in empty space.<br><br>I played songs to numb the pain,<br>But they only stir the rain,<br>The beats don’t heal, they just confuse,<br>Another way to feel abused.<br><br>I wrote poems from deep inside,<br>But now the words just run and hide,<br>The paper’s blank, no voice to hear,<br>Just silence ringing loud and clear.<br><br>I sit in the dark, hoping for light,<br>But it’s just me and my endless fight,<br>Chasing dreams that slip away,<br>And waiting for tomorrow, another day.<br><br>~summry</p>
+    </div>
+
+    <div id="poetry4" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry4')">×</button>
+        <h2>Love</h2>
+        <p>Love is the fire that lights the dark,<br>A spark in the soul, a burning mark.<br>It whispers softly, it shouts aloud,<br>A heart beats louder, lost in the crowd.<br><br>In your eyes, I see the stars,<br>In your touch, I’ve traveled far.<br>Every kiss, a sweet refrain,<br>A melody that soothes my pain.<br><br>Love, it’s wild, it’s free, it’s true,<br>Forever lost in me and you.<br><br>~summry</p>
+    </div>
+
+    <div id="poetry5" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry5')">×</button>
+        <h2>Terror of Silence</h2>
+        <p>The shadows crawl, the walls they speak,<br>Whispers from places where light won’t peek.<br>Eyes that follow, never seen,<br>Hands that touch, cold and keen.<br><br>Footsteps echo in the dead of night,<br>But no one’s there, just endless fright.<br>The air grows thick, the room feels tight,<br>As something stirs just out of sight.<br><br>A scream that chokes, a door that’s locked,<br>The terror’s real, but time’s been mocked.<br>In the silence, it waits, it hides,<br>A nightmare where no one survives.<br><br>~summry</p>
+    </div>
+
+    <div id="poetry6" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry6')">×</button>
+        <h2>My Girl in Green</h2>
+        <p>She’s standing in the green with golden dupatta on her right<br>Face tilted down with eyes big and bright,<br><br>Yellow golden flowers are also in the frame<br>But everything fades that comes against her name,<br><br>Looking like an angel calm and sincere<br>Seeing her without glasses is lovely and rare.<br><br>~summry</p>
+    </div>
+
+    <div id="poetry7" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry7')">×</button>
+        <h2>Echoes of a Broken Soul</h2>
+        <p>I am Summry, a soul lost in the dark,<br>A fragile boy, carrying endless scars.<br>Born into a house where love was a lie,<br>Where screams echoed, and hope would die.<br><br>I watched my mother, her tears never dry,<br>As my father’s rage tore her sky.<br>Each day he broke her with words and fists,<br>And I, too small, could only exist.<br><br>I prayed for it to stop, for it to end,<br>But prayers, it seems, aren’t meant to mend.<br>For years I sat in silent and death was near,<br>Looking for someone, to care.<br><br>Then there was Naman, my only friend,<br>The one who promised he’d never bend.<br>He saw me when no one else could,<br>He stayed by my side when no one would.<br><br>And then… she came, so gentle, so kind,<br>A girl who healed the cracks in my mind.<br>She was a little shorter, with specs on her face,<br>Big, beautiful eyes filled with grace.<br>~summry</p>
+    </div>
+
+    <div id="poetry8" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry8')">×</button>
+        <h2>My Girl in Glasses</h2>
+        <p>She’s sitting there with glasses on her face,<br>Big eyes bright, filled with grace.<br><br>In every glance, I see the world,<br>And in her smile, my heart’s unfurled.<br><br>~summry</p>
+    </div>
+
+    <div id="poetry9" class="poetry-content">
+        <button class="close-btn" onclick="closePoetry('poetry9')">×</button>
+        <h2>No Name</h2>
+        <p>In the quiet, I search for you,<br>In every shadow, in every view.<br>But you’re not here, not in the crowd,<br>Not in the whispers that are too loud.<br><br>Yet somehow, I know you’re there,<br>Hidden behind the silent air.<br><br>~summry</p>
+    </div>
+
+    <script>
+        function showPoetry(poetryId) {
+            document.getElementById(poetryId).style.display = 'block';
+        }
+
+        function closePoetry(poetryId) {
+            document.getElementById(poetryId).style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
